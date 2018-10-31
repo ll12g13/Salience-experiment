@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Stage 2
+{% endblock %}
+
+{% block content %}
+    <h5>
+        <br/><br/>
+        The second stage starts now.
+        <br/><br/>
+        In this stage, you will need to answer {{ Constants.num_rounds }} binary choice questions.
+        <br/><br/>
+        Your payment will be based on one of the {{ Constants.num_rounds }} decisions that will be randomly selected.
+        <br/><br/>
+        Please click <strong>Next</strong> to start.
+    </h5>
+    <br/><br/>
+    {% next_button %}
+{% endblock %}
+
+

@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Stage 1
+{% endblock %}
+
+{% block content %}
+
+    <h5>
+        <br/><br/>
+        The experiment has {{ Constants.num_rounds }} periods.
+        <br/><br/>
+        In each period, you will need to make choices between a lottery and a series of certain values.
+        <br/><br/>
+        Please click <strong>Next</strong> to start.
+    </h5>
+    <br/><br/>
+        {% next_button %}
+{% endblock %}

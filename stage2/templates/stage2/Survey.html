@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Please state your answers to the following questions:
+{% endblock %}
+
+{% block content %}
+    <ol>
+    <li>{% formfield player.gender label="Please state your gender:" %}</li>
+    <li>{% formfield player.nationality label="What is your nationality?" %}</li>
+    <li>{% formfield player.major label="Your major of study:" %}</li>
+    <li>{% formfield player.age label="Please state your age:" %}</li>
+    </ol>
+    {% next_button %}
+{% endblock %}
+
+

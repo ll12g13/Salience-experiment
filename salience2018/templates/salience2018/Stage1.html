@@ -1,0 +1,67 @@
+
+{% extends "salience2018/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <p id = "round_numbers"><ins>Question {{ player.round_number}} of {{ Constants.num_rounds}}</ins></p>
+    <p>
+        For each row of the following table,please decide whether you prefer <strong>OPTION A(a risk prospect)</strong>
+        or <strong>OPTION B(a certain payoff)</strong>.
+    </p>
+    <table>
+        <tr>
+            <th>OPTION A(in pounds)</th>
+            <th>Your Choices</th>
+            <th>OPTION B(in pounds)</th>
+        </tr>
+
+        <tr>
+            <td rowspan="8">Receiving <strong>{{ player.x1 }}</strong> with probability <strong>{{ player.p1 }}</strong><br><br>
+                Receiving <strong>{{ player.x2 }}</strong> with probability <strong>{{ player.p2 }}</strong></td>
+            <td>  {% formfield player.choice1 label=""%}</td>
+            <td>Receiving <strong>{{ player.s1 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s2 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s3 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s4 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s5 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s6 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s7 }}</strong> for sure</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Receiving <strong>{{ player.s8 }}</strong> for sure</td>
+        </tr>
+    </table>
+    <br>
+ <button class="otree-btn-next btn btn-primary next-button otree-next-button float-right">Submit</button>
+{% endblock %}
+
+

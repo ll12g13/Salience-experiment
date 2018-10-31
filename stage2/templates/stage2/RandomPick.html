@@ -1,0 +1,56 @@
+{% extends "stage2/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+
+{% block content %}
+    <p id = "round_numbers">Question number {{ player.paying_question }}  is chosen, and it is as follows: </p>
+    <table>
+        <tr>
+            <th>OPTION A(in pounds)</th>
+            <th>Your Choices</th>
+            <th>OPTION B(in pounds)</th>
+        </tr>
+
+        <tr>
+            <td>
+                <br>
+                Receiving  <strong>{{ player.paying_xa1 }}</strong>  with probability  <strong>{{ player.paying_pa1 }}</strong><br><br>
+                {% if player.paying_pa2 == 0 %}{% else %}
+                Receiving <strong>{{ player.paying_xa2 }}</strong> with probability <strong>{{ player.paying_pa2 }}</strong><br><br>
+                {% endif %}
+                {% if player.paying_pa3 == 0 %}{% else %}
+                Receiving <strong>{{ player.paying_xa3 }}</strong> with probability <strong>{{ player.paying_pa3 }}</strong><br><br>
+                {% endif %}
+            </td>
+            <td>  Your choice was <strong>{{ player.paying_choice }}</strong> </td>
+            <td>
+                <br>
+                Receiving <strong>{{ player.paying_xb1 }}</strong> with probability <strong>{{ player.paying_pb1 }}</strong><br><br>
+                {% if player.paying_pb2 == 0 %}{% else %}
+                Receiving <strong>{{ player.paying_xb2 }}</strong> with probability <strong>{{ player.paying_pb2 }}</strong><br><br>
+                {% endif %}
+                {% if player.paying_pb3 == 0 %}{% else %}
+                Receiving <strong>{{ player.paying_xb3 }}</strong> with probability <strong>{{ player.paying_pb3 }}</strong><br><br>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <p>If your choice is not a sure payoff, you will need to roll a ten-sided die to determine the payoff.</p>
+    <p> <strong>Please wait and do not enter any number or click "next" until the experimenter goes to you.</strong></p>
+{#    if the probabilty is 1, we do not show this statement.#}
+{#    if the probability has two decimal, we roll the die twice.<br>#}
+{#    if the probability has one decimal, we roll the die once.<br>#}
+
+     <center>{%  formfield player.payment_s2 label="Your payment in Stage 2 is:" %}</center>
+    <p>Your payment = Participant fee (£4) + Payment in Stage 1 (£4) + Payment in Stage 2 </p>
+
+    <center>{%  formfield player.total_payment label="Therefore, your payment is:" %}</center><br>
+    {% next_button %}
+{% endblock %}
+
+

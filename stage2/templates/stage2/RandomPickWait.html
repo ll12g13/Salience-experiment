@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <h5>
+        <br/><br/>
+        You have finished all the decisions.
+        <br/><br/>
+        The computer will randomly select a question, and your will be paid according to your decision of this question.
+        <br/><br/>
+        Please click Next to continue.
+    </h5>
+        <br/><br/>
+    {% next_button %}
+{% endblock %}
+
+

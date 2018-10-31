@@ -1,0 +1,49 @@
+{% extends "stage2/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <p id = "round_numbers"><ins>Question {{ player.round_number}} of {{ Constants.num_rounds}}</ins></p>
+    <p>
+        For each row of the following table,please decide whether you prefer <strong>OPTION A (a risk prospect)</strong>
+        or <strong>OPTION B (a certain payoff)</strong>.
+    </p>
+    <br><br>
+    <table>
+        <tr>
+            <th>OPTION A(in pounds)</th>
+            <th>Your Choices</th>
+            <th>OPTION B(in pounds)</th>
+        </tr>
+
+        <tr>
+            <td>
+                <br>
+                Receiving  <strong>{{ player.xa1 }}</strong>  with probability  <strong>{{ player.pa1 }}</strong><br><br>
+                {% if player.pa2 == 0 %}{% else %}
+                Receiving <strong>{{ player.xa2 }}</strong> with probability <strong>{{ player.pa2 }}</strong><br><br>
+                {% endif %}
+                {% if player.pa3 == 0 %}{% else %}
+                Receiving <strong>{{ player.xa3 }}</strong> with probability <strong>{{ player.pa3 }}</strong><br><br>
+                {% endif %}
+            </td>
+            <td>  {% formfield player.choice label=""%}</td>
+            <td>
+                <br>
+                Receiving <strong>{{ player.xb1 }}</strong> with probability <strong>{{ player.pb1 }}</strong><br><br>
+                {% if player.pb2 == 0 %}{% else %}
+                Receiving <strong>{{ player.xb2 }}</strong> with probability <strong>{{ player.pb2 }}</strong><br><br>
+                {% endif %}
+                {% if player.pb3 == 0 %}{% else %}
+                Receiving <strong>{{ player.xb3 }}</strong> with probability <strong>{{ player.pb3 }}</strong><br><br>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+    <br>
+ <button class="otree-btn-next btn btn-primary next-button otree-next-button float-right">Submit</button>
+{% endblock %}
+
+
