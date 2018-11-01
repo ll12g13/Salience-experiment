@@ -3,7 +3,7 @@ from otree.api import (
     Currency as c, currency_range
 )
 
-import numpy as np
+# import numpy as np
 import itertools
 import random
 
