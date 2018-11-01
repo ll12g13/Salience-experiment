@@ -17,7 +17,7 @@ class Stage1Start(Page):
 
 class Stage1(Page):
     form_model = 'player'
-    form_fields = ['choice1',]
+    form_fields = ['choice1','choice2','choice3','choice4','choice5','choice6','choice7','choice8',]
     pass
 
 

@@ -68,10 +68,14 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    choice1 = models.StringField(
-        choices=['A', 'B',],
-        widget=widgets.RadioSelectHorizontal,
-    )
+    choice1 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice2 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice3 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice4 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice5 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice6 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice7 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice8 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
 
     x1 = models.FloatField()
     x2 = models.FloatField()
