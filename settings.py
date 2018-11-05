@@ -15,7 +15,7 @@ SESSION_CONFIGS = [
     {
        'name': 'salience2018',
        'display_name': "Lunzheng Li's experiment",
-       'num_demo_participants': 1,
+       'num_demo_participants': 2,
        'app_sequence': ['salience2018','stage2'],
        # 'app_sequence': ['stage2'],
     },
@@ -53,7 +53,6 @@ ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
 
 # Consider '', None, and '0' to be empty/false
 
-OTREE_PRODUCTION = 1
 DEBUG = (environ.get('OTREE_PRODUCTION') in {None, '', '0'})
 
 

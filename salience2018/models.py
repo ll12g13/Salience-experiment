@@ -20,7 +20,7 @@ It basicly all kinds of binary choice qustions displays in random order for each
 class Constants(BaseConstants):
     name_in_url = 'salience2018'
     players_per_group = None
-    num_rounds = 3
+    num_rounds = 1
 
     # outcomes = [[50, 0], [20, 0], [15, 5], [20, 10]]
     # probabilities = [0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99]
