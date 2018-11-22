@@ -18,6 +18,7 @@ SESSION_CONFIGS = [
        'num_demo_participants': 16,
        'app_sequence': ['salience2018','stage2'],
        # 'app_sequence': ['stage2'],
+       # 'app_sequence': ['salience2018'],
     },
 ]
 
