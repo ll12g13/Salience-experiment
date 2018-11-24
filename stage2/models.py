@@ -14,47 +14,75 @@ This the stage 2 + survey for the salience paper.
 class Constants(BaseConstants):
     name_in_url = 'stage2'
     players_per_group = None
-    num_rounds = 10
+    num_rounds = 40
 
     # let make up some questions, just to test the app
     # all_list = [[(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)], [(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)], [(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)]]
     all_list = [[15.0, 11, 0, 0.25, 0.75, 0, 12, 0, 0, 1, 0, 0], [12.0, 7, 0, 0.4, 0.6, 0, 9, 0, 0, 1, 0, 0], [12, 0, 0, 1, 0, 0, 15.0, 0, 0, 0.8, 0.2, 0], [14.5, 2, 0, 0.8, 0.2, 0, 12, 0, 0, 1, 0, 0], [9.0, 5, 0, 0.25, 0.75, 0, 6, 0, 0, 1, 0, 0], [6, 0, 0, 1, 0, 0, 12.0, 2, 0, 0.4, 0.6, 0], [7, 0, 0, 1, 0, 0, 9.0, 4, 0, 0.6, 0.4, 0], [15.0, 13, 0, 0.5, 0.5, 0, 14, 0, 0, 1, 0, 0], [6.0, 4, 0, 0.5, 0.5, 0, 5, 0, 0, 1, 0, 0], [7, 0, 0, 1, 0, 0, 8.5, 6, 0, 0.4, 0.6, 0], [12.0, 7, 0, 0.8, 0.2, 0, 11, 0, 0, 1, 0, 0], [11, 0, 0, 1, 0, 0, 12.0, 10, 0, 0.5, 0.5, 0], [9, 0, 0, 1, 0, 0, 15.0, 7, 0, 0.25, 0.75, 0], [15.0, 5, 0, 0.1, 0.9, 0, 6, 0, 0, 1, 0, 0], [9.0, 5, 0, 0.5, 0.5, 0, 7, 0, 0, 1, 0, 0], [8.0, 6, 0, 0.5, 0.5, 0, 7, 0, 0, 1, 0, 0], [8, 0, 0, 1, 0, 0, 12.5, 5, 0, 0.4, 0.6, 0], [10, 0, 0, 1, 0, 0, 11.0, 6, 0, 0.8, 0.2, 0], [10, 0, 0, 1, 0, 0, 11.5, 9, 0, 0.4, 0.6, 0], [7, 0, 0, 1, 0, 0, 12.0, 2, 0, 0.5, 0.5, 0], [12, 0, 0, 0.11, 0.89, 0, 13, 0, 0, 0.1, 0.9, 0], [13, 3, 0, 0.11, 0.89, 0, 15, 3, 0, 0.1, 0.89, 0.01], [10, 7.5, 0, 0.34, 0.66, 0, 11, 7.5, 0, 0.33, 0.66, 0.01], [15, 3.5, 0, 0.9, 0.09, 0.01, 14, 3.5, 0, 0.91, 0.09, 0], [14, 0, 0, 0.9, 0.1, 0, 13, 0, 0, 0.95, 0.05, 0], [10, 5.0, 0, 0.76, 0.24, 0, 11, 5.0, 0, 0.75, 0.24, 0.01], [13, 8, 0, 0.33, 0.66, 0.01, 11, 8, 0, 0.34, 0.66, 0], [14, 9.5, 0, 0.75, 0.24, 0.01, 13, 9.5, 0, 0.76, 0.24, 0], [13, 2.5, 0, 0.5, 0.45, 0.05, 11, 2.5, 0, 0.55, 0.45, 0], [13, 0, 0, 0.9, 0.1, 0, 12, 0, 0, 0.95, 0.05, 0], [10, 6.5, 0, 0.5, 0.49, 0.01, 9, 6.5, 0, 0.51, 0.49, 0], [10, 2.5, 0, 0.55, 0.45, 0, 12, 2.5, 0, 0.5, 0.45, 0.05], [13, 6.5, 0, 0.11, 0.89, 0, 15, 6.5, 0, 0.1, 0.89, 0.01], [10, 5.0, 0, 0.11, 0.89, 0, 11, 5.0, 0, 0.1, 0.89, 0.01], [10, 6.0, 0, 0.75, 0.2, 0.05, 8, 6.0, 0, 0.8, 0.2, 0], [10, 2.5, 0, 0.11, 0.89, 0, 12, 2.5, 0, 0.1, 0.89, 0.01], [9, 6.5, 0, 0.76, 0.24, 0, 10, 6.5, 0, 0.75, 0.24, 0.01], [14, 9.5, 0, 0.33, 0.66, 0.01, 13, 9.5, 0, 0.34, 0.66, 0], [13, 9.5, 0, 0.51, 0.49, 0, 14, 9.5, 0, 0.5, 0.49, 0.01], [14, 6.5, 0, 0.75, 0.24, 0.01, 13, 6.5, 0, 0.76, 0.24, 0]]
-    random.shuffle(all_list)
+    # random.shuffle(all_list)
+
+    [list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15, list16,]  = 16 * [None,]
+    lists = [list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15, list16,]
+    for i in range(1, 17):
+        random.shuffle(all_list)
+        lists[i-1] = all_list.copy()
+
 class Subsession(BaseSubsession):
     def creating_session(self):
-        # group or player, I need to figure this out
+        # since we dont have a get_player_by_id() in subsessions
+        i = 0
         for p in self.get_players():
-            p.xa1 = Constants.all_list[self.round_number - 1][0]
-            p.xa2 = Constants.all_list[self.round_number - 1][1]
-            p.xa3 = Constants.all_list[self.round_number - 1][2]
-            p.pa1 = Constants.all_list[self.round_number - 1][3]
-            p.pa2 = Constants.all_list[self.round_number - 1][4]
-            p.pa3 = Constants.all_list[self.round_number - 1][5]
-            p.xb1 = Constants.all_list[self.round_number - 1][6]
-            p.xb2 = Constants.all_list[self.round_number - 1][7]
-            p.xb3 = Constants.all_list[self.round_number - 1][8]
-            p.pb1 = Constants.all_list[self.round_number - 1][9]
-            p.pb2 = Constants.all_list[self.round_number - 1][10]
-            p.pb3 = Constants.all_list[self.round_number - 1][11]
+            p.xa1 = Constants.lists[i][self.round_number - 1][0]
+            p.xa2 = Constants.lists[i][self.round_number - 1][1]
+            p.xa3 = Constants.lists[i][self.round_number - 1][2]
+            p.pa1 = Constants.lists[i][self.round_number - 1][3]
+            p.pa2 = Constants.lists[i][self.round_number - 1][4]
+            p.pa3 = Constants.lists[i][self.round_number - 1][5]
+            p.xb1 = Constants.lists[i][self.round_number - 1][6]
+            p.xb2 = Constants.lists[i][self.round_number - 1][7]
+            p.xb3 = Constants.lists[i][self.round_number - 1][8]
+            p.pb1 = Constants.lists[i][self.round_number - 1][9]
+            p.pb2 = Constants.lists[i][self.round_number - 1][10]
+            p.pb3 = Constants.lists[i][self.round_number - 1][11]
+            i += 1
 
+        if self.round_number == Constants.num_rounds:
+            j = 0
+            for p in self.get_players():
+                p.paying_question = random.randint(1, Constants.num_rounds)
+                p.paying_xa1 = Constants.lists[j][p.paying_question - 1][0]
+                p.paying_xa2 = Constants.lists[j][p.paying_question - 1][1]
+                p.paying_xa3 = Constants.lists[j][p.paying_question - 1][2]
+                p.paying_pa1 = Constants.lists[j][p.paying_question - 1][3]
+                p.paying_pa2 = Constants.lists[j][p.paying_question - 1][4]
+                p.paying_pa3 = Constants.lists[j][p.paying_question - 1][5]
+                p.paying_xb1 = Constants.lists[j][p.paying_question - 1][6]
+                p.paying_xb2 = Constants.lists[j][p.paying_question - 1][7]
+                p.paying_xb3 = Constants.lists[j][p.paying_question - 1][8]
+                p.paying_pb1 = Constants.lists[j][p.paying_question - 1][9]
+                p.paying_pb2 = Constants.lists[j][p.paying_question - 1][10]
+                p.paying_pb3 = Constants.lists[j][p.paying_question - 1][11]
+                j += 1
+
+        # the following codes work for the non-randomize case, let's keep it
         # the idea is that  at the begining of the experiment we pick the random question for player, and
         # show it at the end of the experiment
 
-        if self.round_number == Constants.num_rounds: # if we set round_number = 1, result page will give us None. Since the result
-            for p in self.get_players():             # caculate at the last round, we should set round_number to Constants.num_rounds
-                p.paying_question = random.randint(1, Constants.num_rounds)
-                p.paying_xa1 = Constants.all_list[p.paying_question - 1][0]
-                p.paying_xa2 = Constants.all_list[p.paying_question - 1][1]
-                p.paying_xa3 = Constants.all_list[p.paying_question - 1][2]
-                p.paying_pa1 = Constants.all_list[p.paying_question - 1][3]
-                p.paying_pa2 = Constants.all_list[p.paying_question - 1][4]
-                p.paying_pa3 = Constants.all_list[p.paying_question - 1][5]
-                p.paying_xb1 = Constants.all_list[p.paying_question - 1][6]
-                p.paying_xb2 = Constants.all_list[p.paying_question - 1][7]
-                p.paying_xb3 = Constants.all_list[p.paying_question - 1][8]
-                p.paying_pb1 = Constants.all_list[p.paying_question - 1][9]
-                p.paying_pb2 = Constants.all_list[p.paying_question - 1][10]
-                p.paying_pb3 = Constants.all_list[p.paying_question - 1][11]
+        # if self.round_number == Constants.num_rounds: # if we set round_number = 1, result page will give us None. Since the result
+        #     for p in self.get_players():             # caculate at the last round, we should set round_number to Constants.num_rounds
+        #         p.paying_question = random.randint(1, Constants.num_rounds)
+        #         p.paying_xa1 = Constants.all_list[p.paying_question - 1][0]
+        #         p.paying_xa2 = Constants.all_list[p.paying_question - 1][1]
+        #         p.paying_xa3 = Constants.all_list[p.paying_question - 1][2]
+        #         p.paying_pa1 = Constants.all_list[p.paying_question - 1][3]
+        #         p.paying_pa2 = Constants.all_list[p.paying_question - 1][4]
+        #         p.paying_pa3 = Constants.all_list[p.paying_question - 1][5]
+        #         p.paying_xb1 = Constants.all_list[p.paying_question - 1][6]
+        #         p.paying_xb2 = Constants.all_list[p.paying_question - 1][7]
+        #         p.paying_xb3 = Constants.all_list[p.paying_question - 1][8]
+        #         p.paying_pb1 = Constants.all_list[p.paying_question - 1][9]
+        #         p.paying_pb2 = Constants.all_list[p.paying_question - 1][10]
+        #         p.paying_pb3 = Constants.all_list[p.paying_question - 1][11]
     pass
 
 
@@ -128,10 +156,10 @@ class Player(BasePlayer):
     #                         # '<' not supported between instances of 'NoneType' and 'int', I guess it because we haven't get all the decisions
     #     self.paying_choice = self.in_round(self.paying_question).choice
     def find_decision(self):
-        list10 = [i for i in range(1, 10)]
-        list10.append(0)
-        list100 = [i for i in range(1,100)]
-        list100.append(0)
+        # list10 = [i for i in range(1, 10)]
+        # list10.append(0)
+        # list100 = [i for i in range(1,100)]
+        # list100.append(0)
         if self.round_number == Constants.num_rounds:
             self.paying_choice = self.in_round(self.paying_question).choice
             # let's work oon the dice statement, how dice number related to payment

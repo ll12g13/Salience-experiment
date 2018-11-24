@@ -22,7 +22,7 @@ class Stage1(Page):
 
 
 page_sequence = [
-    # WelcomePage,
-    # Stage1Start,
+    WelcomePage,
+    Stage1Start,
     Stage1,
 ]
