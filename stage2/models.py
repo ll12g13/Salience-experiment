@@ -148,9 +148,9 @@ class Player(BasePlayer):
 
     paying_choice = models.StringField() # this is the player's choice for the paying round
 
-    dice1 = models.StringField()
-    dice2 = models.StringField()
-    dice3 = models.StringField()
+    # dice1 = models.StringField()
+    # dice2 = models.StringField()
+    # dice3 = models.StringField()
 
     # def find_decision(self):# not sure how it works, if I put it in the random pick page, it give us
     #                         # '<' not supported between instances of 'NoneType' and 'int', I guess it because we haven't get all the decisions
@@ -226,9 +226,6 @@ class Player(BasePlayer):
 #  let's figure out everything using a raw python file. We bulid a function which input
 #  a list of numbers like in Constants list, and output a dice statement
 #  let make every other thing work, tackle this problem in the end.
-
-
-
 
 
     pass

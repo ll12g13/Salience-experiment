@@ -153,25 +153,25 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    # choice1 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice2 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice3 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice4 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice5 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice6 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice7 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
-    # choice8 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice1 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice2 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice3 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice4 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice5 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice6 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice7 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
+    choice8 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal,)
 
 
     # # # I made following fields just for testing purpose, remember to get it back before the real sessions
-    choice1 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice2 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice3 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice4 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice5 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice6 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice7 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
-    choice8 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice1 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice2 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice3 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice4 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice5 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice6 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice7 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
+    # choice8 = models.StringField(choices=['A', 'B',], widget=widgets.RadioSelectHorizontal, blank=True)
 
     x1 = models.FloatField()
     x2 = models.FloatField()
