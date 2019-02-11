@@ -15,7 +15,7 @@ SESSION_CONFIGS = [
     {
        'name': 'salience2018',
        'display_name': "Lunzheng Li's experiment",
-       'num_demo_participants': 16,
+       'num_demo_participants': 3,
        'app_sequence': ['salience2018','stage2'],
        # 'app_sequence': ['stage2'],
        # 'app_sequence': ['salience2018'],
