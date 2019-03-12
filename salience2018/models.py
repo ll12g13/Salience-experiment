@@ -20,7 +20,7 @@ It basicly all kinds of binary choice qustions displays in random order for each
 class Constants(BaseConstants):
     name_in_url = 'salience2018'
     players_per_group = None
-    num_rounds = 3
+    num_rounds = 36
     
     
     # # # I tried to create the questions in otree. However, diffcult to get it work 

@@ -14,7 +14,7 @@ This the stage 2 + survey for the salience paper.
 class Constants(BaseConstants):
     name_in_url = 'stage2'
     players_per_group = None
-    num_rounds = 3
+    num_rounds = 36
 
     # let make up some questions, just to test the app
     # all_list = [[(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)], [(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)], [(14, 0.1),(4, 0.9),(0, 0),(5,1),(0,0),(0,0)]]

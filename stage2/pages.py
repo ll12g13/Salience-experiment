@@ -26,7 +26,7 @@ class Stage2(Page):
 #     2. also, I think we need everyone at the end of stage2 , and start random pick together
 
 class RandomPickWait(WaitPage):
-    title_text = "Please wait"
+    title_text = "We are waiting for everyone to finish. Thank you so much for your patience."
     body_text = "The computer will randomly select a question, and your will be paid according to your decision of this question."
     def is_displayed(self):
         return self.round_number == Constants.num_rounds
